@@ -1,0 +1,126 @@
+:root {
+    --project-color-red: hsl(0, 78%, 62%);
+    --project-color-cyan: hsl(180, 62%, 55%);
+    --project-color-orange:hsl(34, 97%, 64%);
+    --project-color-blue: hsl(212, 86%, 64%);
+    --project-font-color-light-gray: hsl(229, 6%, 66%);
+}
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0 auto;
+    max-width: 1440px;
+    background-color: hsla(0, 0%, 98%, 0.66);
+}
+header {
+    margin: 50px auto;
+    text-align: center;
+    max-width: 500px;
+    margin-bottom: 5vh;
+}
+
+
+
+header h1 {
+    font-size: 2em;
+    font-weight: 200;
+    line-height: 1.4;
+    margin-bottom: 0.5em;
+    color: var(--project-font-color-light-gray);
+
+}
+
+header h1 span {
+    font-size: 1em;
+    font-weight: 600;
+    color: #000;
+}
+
+header p {
+    color: var(--project-font-color-light-gray);
+}
+
+
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.box {
+    background-color: #fff;
+	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05), 0 6px 6px rgba(0, 0, 0, 0.1);
+	border-radius: 5px;
+	padding: 1.4em;
+	position: relative;
+	overflow: hidden;
+	margin: 0.9em;
+	width: 350px;
+}
+
+.box h3 {
+    font-weight: 600;
+    font-size: 1.5em;
+    padding-bottom: 0.3em;
+}
+
+.box p {
+    color: var(--project-font-color-light-gray);
+    padding: 0.3em;
+    font-size: 0.9em;
+
+}
+
+.box img {
+    align-self: flex-end;
+    align-content: space-between;
+    float: right;
+    padding: 1em;
+
+}
+
+.push-down {
+    transform: translateY(50%);
+}
+
+.border-red {
+    border-top: 5px solid var(--project-color-red);
+}
+.border-cyan {
+    border-top: 5px solid var(--project-color-cyan);
+}
+.border-orange {
+    border-top: 5px solid var(--project-color-orange);
+}
+.border-blue {
+    border-top: 5px solid var(--project-color-blue);
+
+}
+
+
+
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+
+@media (max-width: 768px) {
+    .box {
+        margin: 1.3em;
+    }
+    .push-down {
+        transform: translateY(0);
+
+    }
+    
+    
+}
