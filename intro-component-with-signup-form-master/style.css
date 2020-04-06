@@ -1,0 +1,101 @@
+:root {
+
+ --Red: hsl(0, 100%, 74%); 
+ --Green: hsl(154, 59%, 51%);
+ --Blue: hsl(248, 32%, 49%);
+ --DarkBlue: hsl(249, 10%, 26%);
+ --GrayishBlue: hsl(246, 25%, 77%);
+
+}
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    color: #fff;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0 auto;
+    /* background-color: hsla(0, 0%, 98%, 0.66); */
+    background: var(--Red) url('/images/bg-intro-desktop.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.hero {
+    display: grid;
+    max-width: 1440px;
+    grid-template-columns: 1fr 1fr;
+    gap: 100px;
+    align-content: center;
+    justify-content: center;
+    grid-auto-rows: minmax(100px, auto);
+    margin: 0 auto;
+    padding: 3em;
+    min-height: 100vh;
+       
+}
+.hero-text-content {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 500px;
+    margin: 35vh auto;
+}
+.hero-text-content h1{
+    font-size: 3em;
+    line-height: 1.1;
+    margin-bottom: 0.5em;
+}
+
+.hero-text-content p{
+    
+    line-height: 1.5;
+    margin-bottom: 0.5em;
+}
+
+.hero-form-box {
+     margin-top: 20vh;
+     padding: 10px 30px;
+
+}
+
+.blue-box {
+    padding: 15px;
+    background-color: var(--Blue);
+    border-radius: 5px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+form {
+    border-radius: 5px;
+    background-color: #fff;
+    display: flex;
+    flex-wrap: wrap; 
+    align-items: center;
+    justify-content: center;
+    padding: 30px 30px;
+
+}
+form small {
+    color: #000;
+}
+form input {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    border: 1px solid var(--GrayishBlue);
+}
+
+form button {
+    width: 100%;
+    padding: 15px;
+    background-color: var(--Green);
+    text-transform: uppercase;
+    border-radius: 5px;
+}
