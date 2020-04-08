@@ -7,8 +7,6 @@
  --GrayishBlue: hsl(246, 25%, 77%);
 
 }
-
-
 * {
     box-sizing: border-box;
     margin: 0;
@@ -32,6 +30,7 @@ body {
     grid-template-columns: 1fr 1fr;
     gap: 100px;
     align-content: center;
+    align-items: center;
     justify-content: center;
     grid-auto-rows: minmax(100px, auto);
     margin: 0 auto;
@@ -58,44 +57,112 @@ body {
 }
 
 .hero-form-box {
-     margin-top: 20vh;
+     /* margin-top: 0vh; */
      padding: 10px 30px;
 
 }
 
 .blue-box {
-    padding: 15px;
+    padding: 20px;
     background-color: var(--Blue);
-    border-radius: 5px;
+    border-radius: 10px;
     margin-bottom: 15px;
     text-align: center;
+    box-shadow: 0px 7px hsla(248, 32%, 49%, 0.2)
 }
 
 form {
-    border-radius: 5px;
+    border-radius: 10px;
     background-color: #fff;
     display: flex;
     flex-wrap: wrap; 
     align-items: center;
     justify-content: center;
-    padding: 30px 30px;
+    padding: 40px 40px;
+    position: relative;
+}
+
+.form-input{
+    width: 100%;
+    position: relative;
+    margin-bottom: 30px;
 
 }
+
+.form-input  img{
+    display: none;
+	position: absolute;
+	top: 50%;
+	right: 15px;
+	transform: translateY(-50%);
+	height: 20px;
+    
+
+}
+
+.form-error img{
+    display: block;
+}
 form small {
-    color: #000;
+    margin-top: 15px;
+    color: var(--GrayishBlue);
+    font-size: 0.8em;
+}
+form small span  {
+    color: var(--Red);
+    font-size: 1em;
+    font-weight: 600;
 }
 form input {
     width: 100%;
     padding: 15px;
-    margin-bottom: 30px;
     border-radius: 5px;
     border: 1px solid var(--GrayishBlue);
+    color: #000;
 }
 
+form input::placeholder{
+    padding-left: 20px;
+    /* font-weight: 600; */
+}
 form button {
     width: 100%;
     padding: 15px;
     background-color: var(--Green);
     text-transform: uppercase;
-    border-radius: 5px;
+    border-radius: 10px;
+}
+
+@media screen and ( max-width: 768px) {
+    
+.hero {
+    grid-template-columns: 1fr;
+    padding: 1em;
+       
+}
+.hero-text-content {
+    text-align: center;
+    flex-wrap: wrap;
+    margin: 20vh 0 0 0;
+}
+.hero-text-content h1{
+    font-size: 2em;
+    margin-bottom: 1em;
+}
+
+.hero-text-content p{
+    
+    line-height: 1.5;
+    margin-bottom: 0.5em;
+}
+
+.hero-form-box {
+     padding: 10px 0px;
+
+}
+form input {
+    width: 100%;
+    padding: 20px 30px;
+}
+
 }
