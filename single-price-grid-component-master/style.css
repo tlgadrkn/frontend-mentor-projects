@@ -1,0 +1,48 @@
+:root {
+    --primaryColorCyan: hsl(179, 62%, 43%);
+    --primaryColorBrightYellow: hsl(71, 73%, 54%);
+    --neutralColorLightGray: hsl(204, 43%, 93%);
+    --neutralColorGrayishBlue:  hsl(218, 22%, 67%);
+}
+
+body {
+    box-sizing: border-box;
+    max-width: 1440px;
+    font-family: 'Karla', sans-serif;
+    font-size: 16px;
+    margin: 0 auto;
+    background-color: var(--neutralColorLightGray);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 2em;
+}
+main {
+    background-color: #fff;
+	border-radius: 10px;
+	box-shadow: 0 5px 10px 10px rgba(0, 0, 0, 0.05);
+	max-width: 800px;
+	margin: auto;
+	overflow: hidden;
+} 
+
+section {
+    padding: 3em;
+}
+
+.row {
+	display: flex;
+}
+
+.box-header{
+    background-color: #fff;
+}
+
+.box-inner-left {
+    background-color: var(--primaryColorCyan);
+    width: 50%;
+}
+.box-inner-right {
+    background-color: var(--neutralColorGrayishBlue);
+    width: 50%;
+}
