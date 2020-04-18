@@ -1,0 +1,14 @@
+:root {
+    --primaryColorBlue: hsl(223, 87%, 63%);
+    --secondaryColorPaleRed: hsl(223, 100%, 88%);
+    --secondaryColorLightRed: hsl(354, 100%, 66%);
+    --neutralColorGray: hsl(0, 0%, 59%);
+    --newutralColorDarkBlue: hsl(209, 33%, 12%);
+}
+
+body {
+    box-sizing: border-box;
+    max-width: 1440px;
+    font-size: 16px;
+    margin: 0 auto;
+}
