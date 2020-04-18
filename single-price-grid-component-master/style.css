@@ -2,7 +2,7 @@
     --primaryColorCyan: hsl(179, 62%, 43%);
     --primaryColorBrightYellow: hsl(71, 73%, 54%);
     --neutralColorLightGray: hsl(204, 43%, 93%);
-    --neutralColorGrayishBlue:  hsl(218, 22%, 67%);
+    --neutralColorGrayishBlue: hsl(218, 22%, 67%);
 }
 
 body {
@@ -12,37 +12,102 @@ body {
     font-size: 16px;
     margin: 0 auto;
     background-color: var(--neutralColorLightGray);
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	padding: 2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2em;
+    height: 100vh;
+
 }
+
 main {
     background-color: #fff;
-	border-radius: 10px;
-	box-shadow: 0 5px 10px 10px rgba(0, 0, 0, 0.05);
-	max-width: 800px;
-	margin: auto;
-	overflow: hidden;
-} 
-
-section {
-    padding: 3em;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px 10px rgba(0, 0, 0, 0.05);
+    max-width: 800px;
+    width: 750px;
+    margin: auto;
+    overflow: hidden;
 }
 
 .row {
-	display: flex;
+    display: flex;
 }
 
-.box-header{
-    background-color: #fff;
+.box h1 {
+    font-size: 2.1em;
+    color: var(--primaryColorCyan);
 }
 
-.box-inner-left {
+.box {
+    color: #fff;
+    padding: 2.5em;
+    flex: 1 1 0px;
+}
+
+.box h2 {
+    width: 100%;
+    font-size: 1.3em;
+}
+
+.box button {
+    width: 100%;
+    cursor: pointer;
+    padding: 1em;
+    background-color: var(--primaryColorBrightYellow);
+    box-shadow: 0 5px 5px 5px rgba(0, 0, 0, 0.05);
+    border: 1px solid var(--primaryColorBrightYellow);
+    border-radius: 5px;
+    color: #fff;
+    font-weight: 600;
+}
+
+.box ul {
+    list-style-type: none;
+    padding: 0;
+    line-height: 1.5;
+
+}
+ 
+.box.bg-cyan p {
+    display: flex;
+    align-items: center;
+}
+
+.bright-yellow-text {
+    color: var(--primaryColorBrightYellow);
+    font-size: 1em;
+}
+
+.gray-text {
+    color: var(--neutralColorGrayishBlue);
+    line-height: 1.5;
+}
+
+.bg-cyan {
     background-color: var(--primaryColorCyan);
-    width: 50%;
 }
-.box-inner-right {
-    background-color: var(--neutralColorGrayishBlue);
-    width: 50%;
+
+.bg-light-cyan {
+    background-color: hsla(179, 62%, 43%, 0.8);
+}
+
+.faded {
+    color: hsla(0, 0%, 100%, 0.6)
+}
+
+.big {
+    color: #fff;
+    font-size: 2em;
+    font-weight: bold;
+    margin-right: 0.5em;
+}
+
+
+@media screen and (max-width: 768px) {
+
+    .row {
+        flex-direction: column;
+    }
+
 }
